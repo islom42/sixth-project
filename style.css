@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background: linear-gradient(to top left, #28b487, #7dd56f) no-repeat;
+  overflow-x: hidden;
+}
+h1 {
+  text-align: center;
+  margin: 10px;
+}
+.box {
+  margin: 10px;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+  transform: translateX(400%);
+  transition: transform 0.8s ease;
+  border-radius: 20px;
+}
+.box:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+.box.show {
+  transform: translateX(0);
+}
+/* Post style */
+
+.card {
+  width: 320px;
+  border-radius: 20px;
+  background: #191a1d;
+  overflow: hidden;
+  padding: 14px;
+  position: relative;
+}
+.user-info-name {
+  letter-spacing: 0.4px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+}
+.user-info-time {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.588);
+}
+
+header.user {
+  display: flex;
+  gap: 12px;
+}
+img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+main p {
+  font-size: 14px;
+  color: #fff;
+  margin-top: 16px;
+  line-height: 1.7;
+}
+
+section {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.users-avatars {
+  margin-right: 21px;
+  display: flex;
+  align-items: center;
+}
+.users-avatars img {
+  height: 32px;
+  width: 32px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #191a1d;
+  margin-right: -21px;
+}
+
+section p {
+  color: rgba(255, 255, 255, 0.508);
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+p.comment {
+  margin-left: auto;
+}
+
+/* Post style */
